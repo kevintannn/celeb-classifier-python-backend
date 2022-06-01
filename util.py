@@ -54,10 +54,11 @@ def class_number_to_name(class_num):
 
 
 def classify_image(image_base64_data, file_path=None):
+    global loaded
     if loaded == False:
         load_saved_artifacts()
-        global loaded
         loaded = True
+
     print(">>>>> ", __class_number_to_name)
     print(os.listdir())
     imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
