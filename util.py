@@ -4,6 +4,7 @@ import numpy as np
 import base64
 import json
 from wavelet import w2d
+import os
 
 __class_name_to_number = {}
 __class_number_to_name = {}
@@ -56,6 +57,7 @@ def class_number_to_name(class_num):
 
 def classify_image(image_base64_data, file_path=None):
     print(">>>>> ", __class_number_to_name)
+    print(os.getcwd())
     imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
 
     result = []
