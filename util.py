@@ -34,9 +34,6 @@ def get_cropped_image_if_2_eyes(image_path, image_base64_data):
     else:
         img = get_cv2_image_from_base64_string(image_base64_data)
 
-    cv2.imshow("", img)
-    cv2.waitKey(0)
-
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
@@ -57,7 +54,7 @@ def class_number_to_name(class_num):
 
 def classify_image(image_base64_data, file_path=None):
     print(">>>>> ", __class_number_to_name)
-    print(os.getcwd())
+    print(os.listdir())
     imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
 
     result = []
