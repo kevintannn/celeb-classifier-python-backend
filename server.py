@@ -14,7 +14,6 @@ def none():
 
 @app.route("/classify_image", methods=["GET", "POST"])
 def classify_image():
-    print("i am at classify image")
     image_data = request.form["image_data"]
 
     response = jsonify(util.classify_image(image_data))
