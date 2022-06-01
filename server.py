@@ -3,8 +3,8 @@ from flask_cors import CORS
 import util
 
 app = Flask(__name__)
-# CORS(app)
-cors = CORS(app, {r"*/*": {"origins": "*"}})
+CORS(app, {r"*/*": {"origins": "*"}})
+# cors = CORS(app, {r"*/*": {"origins": "*"}})
 
 
 @app.route("/")
