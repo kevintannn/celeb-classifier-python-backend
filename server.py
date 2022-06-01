@@ -23,5 +23,4 @@ def classify_image():
 
 if __name__ == "__main__":
     print("Starting python flask server...")
-    util.load_saved_artifacts()
     app.run()
