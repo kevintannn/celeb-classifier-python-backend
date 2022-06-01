@@ -41,8 +41,7 @@ mypy-extensions==0.4.3
 nltk==3.4.5
 numpy==1.21.5
 oauthlib==3.2.0
-opencv-contrib-python==3.4.2.16
-opencv-python==3.4.8.29
+opencv-python-headless==4.5.5.64
 opt-einsum==3.3.0
 pathspec==0.9.0
 pefile==2021.9.3
