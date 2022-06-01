@@ -59,8 +59,6 @@ def classify_image(image_base64_data, file_path=None):
         load_saved_artifacts()
         loaded = True
 
-    print(">>>>> ", __class_number_to_name)
-    print(os.listdir())
     imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
 
     result = []
