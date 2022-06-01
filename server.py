@@ -9,7 +9,7 @@ CORS(app)
 
 @app.route("/")
 def none():
-    return "Welcome to Celebrity Image Classifier API!"
+    return "Welcome to Celebrity Image Classifier API"
 
 
 @app.route("/classify_image", methods=["GET", "POST"])
