@@ -106,6 +106,7 @@ def load_saved_artifacts():
             __model = joblib.load(f)
 
     print("loading saved artifacts...done")
+    print(">>>>> ", __class_number_to_name)
 
 
 # if __name__ == "__main__":
